@@ -12,7 +12,7 @@
         $scope.checkLunch = function() {
             var lunch = $scope.lunch.trim().split(/,/);
             if (lunch[0] == "")
-                $scope.msg = "";
+                $scope.msg = "Please enter data first";
             else if (lunch.length <= 3)
                 $scope.msg = "Enjoy!";
             else
